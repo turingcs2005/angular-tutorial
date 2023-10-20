@@ -5,7 +5,7 @@ import { GlobalService } from 'src/app/services/global.service';
   selector: 'app-dude',
   templateUrl: './dude.component.html',
   styleUrls: ['./dude.component.scss'],
-  providers: [ GlobalService  ]
+  providers: [ ]
 })
 export class DudeComponent {
 
