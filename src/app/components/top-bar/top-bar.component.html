@@ -7,7 +7,9 @@
     <div>Angular Tutorial</div>
   
     <div>
-      <mat-icon [routerLink]="['/help']" class="mat-elevation-z2">help</mat-icon> 
+      {{ globalService.dude }}
+      <mat-icon [routerLink]="['/help']" class="mat-elevation-z2"
+      >help</mat-icon> 
     </div>
   
   </mat-toolbar>

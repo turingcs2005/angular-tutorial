@@ -24,7 +24,7 @@ import { AnotherDudeComponent } from './another-dude/another-dude.component';
     DudeComponent
   ],
   providers: [
-    
+
   ]
 })
 export class DiModule { }

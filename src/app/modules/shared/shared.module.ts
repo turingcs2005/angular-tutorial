@@ -5,10 +5,14 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatButtonModule} from '@angular/material/button';
 import {MatDividerModule} from '@angular/material/divider';
+import { NewDudeComponent } from './new-dude/new-dude.component';
+import { GlobalService } from 'src/app/services/global.service';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    NewDudeComponent
+  ],
   imports: [
     CommonModule,
     MatToolbarModule,
@@ -24,6 +28,10 @@ import {MatDividerModule} from '@angular/material/divider';
     MatMenuModule,
     MatButtonModule,
     MatDividerModule,
+    NewDudeComponent
+  ],
+  providers: [
+
   ]
 })
 export class SharedModule { }
