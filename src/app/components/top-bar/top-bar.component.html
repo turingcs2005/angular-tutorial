@@ -1,0 +1,19 @@
+<mat-toolbar color="primary" class="mat-elevation-z12">
+
+    <div>
+      <mat-icon [matMenuTriggerFor]="appMenu" class="mat-elevation-z2" matTooltip="menu">menu</mat-icon> &nbsp;
+    </div>
+  
+    <div>Dependency Injection</div>
+  
+    <div>
+      <mat-icon [routerLink]="['/help']" class="mat-elevation-z2">help</mat-icon> 
+    </div>
+  
+  </mat-toolbar>
+  
+  <mat-menu #appMenu="matMenu">
+    <button mat-menu-item [routerLink]="['/']"><mat-icon>home</mat-icon></button>
+    <button mat-menu-item [routerLink]="['/di']"><mat-icon>vaccines</mat-icon></button>
+  </mat-menu>
+  
