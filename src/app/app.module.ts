@@ -9,6 +9,7 @@ import { HelpComponent } from './components/help/help.component';
 import { TopBarComponent } from './components/top-bar/top-bar.component';
 import { SharedModule } from './modules/shared/shared.module';
 import { DiModule } from './modules/di/di.module';
+import { MarkdownModule } from 'ngx-markdown';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { DiModule } from './modules/di/di.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     SharedModule,
-    DiModule
+    DiModule,
+    MarkdownModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

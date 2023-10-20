@@ -7,7 +7,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatDividerModule} from '@angular/material/divider';
 import { NewDudeComponent } from './new-dude/new-dude.component';
 import { GlobalService } from 'src/app/services/global.service';
-
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,6 +20,7 @@ import { GlobalService } from 'src/app/services/global.service';
     MatMenuModule,
     MatButtonModule,
     MatDividerModule,
+    HttpClientModule
   ],
   exports: [
     CommonModule,
@@ -28,7 +29,8 @@ import { GlobalService } from 'src/app/services/global.service';
     MatMenuModule,
     MatButtonModule,
     MatDividerModule,
-    NewDudeComponent
+    NewDudeComponent,
+    HttpClientModule
   ],
   providers: [
 

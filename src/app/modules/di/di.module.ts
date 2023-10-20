@@ -7,7 +7,7 @@ import { SharedModule } from '../shared/shared.module';
 import { DudeComponent } from './dude/dude.component';
 import { GlobalService } from 'src/app/services/global.service';
 import { AnotherDudeComponent } from './another-dude/another-dude.component';
-
+import { MarkdownModule } from 'ngx-markdown';
 
 @NgModule({
   declarations: [
@@ -18,13 +18,14 @@ import { AnotherDudeComponent } from './another-dude/another-dude.component';
   imports: [
     CommonModule,
     DiRoutingModule,
-    SharedModule
+    SharedModule,
+    MarkdownModule.forChild()
   ],
   exports: [
     DudeComponent
   ],
   providers: [
-
+    GlobalService
   ]
 })
 export class DiModule { }
